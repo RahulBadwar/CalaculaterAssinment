@@ -1,7 +1,26 @@
-﻿
+﻿@model CalaculaterAssinment.Models.Cal
 @{
     ViewBag.Title = "Calculater1";
 }
 
 <h2>Calculater1</h2>
+
+@using (Html.BeginForm(FormMethod.Post))
+{
+
+
+    @Html.DisplayNameFor(m => m.Num1)
+    @Html.TextBoxFor(m => m.Num1)
+    <br />
+    @Html.DisplayNameFor(m => m.Num2)
+    @Html.TextBoxFor(m => m.Num2)
+
+    <br />
+    <input type="submit" name="Add" formaction="Add" formmethod="post" value="Add" />
+    <input type="submit" name="Sub" formaction="Sub" formmethod="post" value="Subtraction" />
+    <input type="submit" name="Mul" formaction="Mul" formmethod="post" value="Multiplication" />
+
+    <h3> your result is @ViewBag.Result</h3>
+
+}
 

@@ -166,6 +166,7 @@
     <Content Include="Views\Home\Calculater.cshtml" />
     <Content Include="Views\Home\CalculterResult.cshtml" />
     <Content Include="Views\Home\Calculater1.cshtml" />
+    <Content Include="Views\Home\CalculterResult1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
